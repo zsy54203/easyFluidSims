@@ -1,0 +1,13 @@
+.body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+}
+.button {
+  background-color: rgb(36, 52, 69);
+  border: 0cap;
+  color: azure;
+  padding: 10px 20px;
+  font-size: medium;
+  margin: 5px 3px;
+  cursor: pointer;
+}
