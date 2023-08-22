@@ -3,7 +3,7 @@
 var gPhysicsScene = {
   gravity: new THREE.Vector3(0.0, -10.0, 0.0),
   dt: 1.0 / 30.0,
-  tankSize: { x: 2.5, y: 1.0, z: 3.0 },
+  tankSize: { x: 4.0, y: 1.0, z: 3.0 },
   tankBorder: 0.03,
   waterHeight: 0.8,
   waterSpacing: 0.02,
@@ -362,13 +362,13 @@ function initScene(scene) {
   // ball
 
   gPhysicsScene.objects.push(
-    new Ball({ x: -0.5, y: 1.0, z: -0.5 }, 0.2, 2.0, 0xffff00)
+    new Ball({ x: -0.5, y: 2.0, z: -0.5 }, 0.2, 2.0, 0xff0088)
   );
   gPhysicsScene.objects.push(
-    new Ball({ x: 0.5, y: 1.0, z: -0.5 }, 0.3, 0.7, 0xff8000)
+    new Ball({ x: 0.5, y: 2.0, z: -0.5 }, 0.3, 0.7, 0x00ff00)
   );
   gPhysicsScene.objects.push(
-    new Ball({ x: 0.5, y: 1.0, z: 0.5 }, 0.25, 0.2, 0xff0000)
+    new Ball({ x: 0.5, y: 2.0, z: 0.5 }, 0.25, 0.2, 0x0066ff)
   );
 }
 
@@ -404,7 +404,7 @@ function initThreeScene() {
 
   // Lights
 
-  gThreeScene.add(new THREE.AmbientLight(0x505050));
+  gThreeScene.add(new THREE.AmbientLight(0x888888));
   gThreeScene.fog = new THREE.Fog(0x000000, 0, 15);
 
   var spotLight = new THREE.SpotLight(0xffffff);
