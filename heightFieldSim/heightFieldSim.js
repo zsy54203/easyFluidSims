@@ -39,6 +39,9 @@ class waterSurface {
     // visual mesh
 
     // two-way coupled interaction
+    simulateCoupling(){
+      
+    }
 
     // loop of the simulaiton
     simulateSurface(){
